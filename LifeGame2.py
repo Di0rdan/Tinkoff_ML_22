@@ -65,7 +65,6 @@ class Grid:
             self.clear()
             return
         arr = np.array(img)
-        print(arr)
         self.data = np.empty(shape=(arr.shape[0], arr.shape[1]), dtype="bool")
         for row in range(self.data.shape[0]):
             for column in range(self.data.shape[1]):
@@ -206,7 +205,7 @@ class LifeGame:
 
             pygame.display.flip()
 
-            # self.cap_frame_rate()
+            self.cap_frame_rate()
 
 
 def main():
